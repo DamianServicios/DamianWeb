@@ -1,232 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Damián Servicio Técnico</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damian Servicio Técnico</title>
 
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f2f2f2;
-        color: #333;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f7f7f7;
+            color: #333;
+        }
 
-    /* MENÚ SUPERIOR */
-    nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background: #ffffff;
-        border-bottom: 1px solid #ddd;
-        padding: 10px 0;
-        z-index: 1000;
-    }
-    nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-        padding: 0;
-        margin: 0;
-    }
-    nav ul li a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        font-size: 15px;
-    }
-    nav ul li a:hover {
-        color: #555;
-    }
+        header {
+            background: #1e88e5;
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+            font-size: 1.8em;
+            letter-spacing: 1px;
+        }
 
-    /* PORTADA */
-    header {
-        padding: 120px 20px 70px;
-        text-align: center;
-        background: white;
-    }
-    header h1 {
-        font-size: 32px;
-        margin: 0;
-    }
-    header p {
-        font-size: 18px;
-        margin-top: 8px;
-    }
-    .telefono {
-        font-size: 22px;
-        margin-top: 15px;
-        font-weight: bold;
-    }
+        nav {
+            background: white;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-    /* SECCIÓN GENÉRICA */
-    section {
-        max-width: 1000px;
-        padding: 40px 20px;
-        margin: auto;
-        background: white;
-        margin-top: 20px;
-        border-radius: 10px;
-    }
-    h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        color: #222;
-    }
+        nav a {
+            margin: 0 12px;
+            text-decoration: none;
+            color: #1e88e5;
+            font-weight: bold;
+            font-size: 0.95em;
+        }
 
-    /* GALERÍAS */
-    .galeria {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 15px;
-    }
-    .galeria img {
-        width: 100%;
-        border-radius: 8px;
-        height: 180px;
-        object-fit: cover;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    }
+        section {
+            padding: 30px 20px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
 
-    /* FORMULARIO */
-    form input, form textarea {
-        width: 100%;
-        padding: 12px;
-        margin-top: 10px;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-    }
-    form button {
-        margin-top: 15px;
-        width: 100%;
-        padding: 12px;
-        background: #333;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        font-size: 16px;
-        cursor: pointer;
-    }
+        h2 {
+            color: #1e88e5;
+        }
 
-    footer {
-        text-align: center;
-        padding: 25px;
-        background: #eaeaea;
-        margin-top: 40px;
-    }
-</style>
+        .servicio {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 4px solid #1e88e5;
+            background: #f2f9ff;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+        }
+
+        .contacto-box {
+            background: #e3f2fd;
+            padding: 18px;
+            border-radius: 8px;
+            margin-top: 18px;
+            font-size: 1.1em;
+        }
+
+        .contacto-box b {
+            color: #1e88e5;
+        }
+
+    </style>
 </head>
 
 <body>
 
-<!-- MENÚ SUPERIOR FIJO -->
-<nav>
-    <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#calderas">Calderas</a></li>
-        <li><a href="#calefactores">Calefactores</a></li>
-        <li><a href="#termotanques">Termotanques</a></li>
-        <li><a href="#cocinas">Cocinas a Gas</a></li>
-        <li><a href="#agua">Red de Agua</a></li>
-        <li><a href="#sanitarios">Sanitarios y Griferías</a></li>
-        <li><a href="#radiadores">Radiadores</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-    </ul>
-</nav>
-
-<!-- PORTADA -->
-<header id="inicio">
-    <h1>Damián Servicio Técnico</h1>
-    <p>Instalaciones y mantenimiento integral del hogar</p>
-    <p>Calderas • Calefactores • Termotanques • Cocinas • Agua y Gas</p>
-    <p class="telefono">📞 2974 160081</p>
+<header>
+    Damian Servicio Técnico
 </header>
 
-<!-- SECCIONES CON GALERÍAS (imágenes libres de derechos) -->
+<nav>
+    <a href="#gas">Gas</a>
+    <a href="#agua">Agua</a>
+    <a href="#calefaccion">Calefacción</a>
+    <a href="#reparaciones">Reparaciones</a>
+    <a href="#electricidad">Electricidad</a>
+    <a href="#contacto">Contacto</a>
+</nav>
 
-<section id="calderas">
-    <h2>Calderas</h2>
-    <div class="galeria">
-        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" />
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" />
-        <img src="https://images.unsplash.com/photo-1597009480442-42d623d7b56a" />
+<section id="presentacion">
+    <h2>Bienvenido</h2>
+    <p>
+        Brindo soluciones integrales para hogares y comercios, con experiencia, responsabilidad y compromiso.
+        Servicios de mantenimiento, instalaciones, reparaciones y ampliaciones.
+    </p>
+
+    <div class="contacto-box">
+        📞 <b>WhatsApp: +54 9 294 430 2685</b><br>
+        Atención en El Bolsón, Lago Puelo, El Hoyo, Epuyén y Bariloche.
     </div>
 </section>
 
-<section id="calefactores">
-    <h2>Calefactores</h2>
-    <div class="galeria">
-        <img src="https://images.unsplash.com/photo-1544989164-389c0bcb8e5d" />
-        <img src="https://images.unsplash.com/photo-1572295442291-f2f3d65c00f1" />
-        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb" />
-    </div>
-</section>
-
-<section id="termotanques">
-    <h2>Termotanques</h2>
-    <div class="galeria">
-        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" />
-        <img src="https://images.unsplash.com/photo-1616587894159-6e853c13c370" />
-        <img src="https://images.unsplash.com/photo-1635430472681-197660d1f0f2" />
-    </div>
-</section>
-
-<section id="cocinas">
-    <h2>Cocinas a Gas</h2>
-    <div class="galeria">
-        <img src="https://images.unsplash.com/photo-1522770179533-24471fcdba45" />
-        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae" />
-        <img src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c" />
-    </div>
+<section id="gas">
+    <h2>Servicios de Gas</h2>
+    <div class="servicio">Instalación de cocinas</div>
+    <div class="servicio">Colocación de calefactores</div>
+    <div class="servicio">Instalación de cañerías de gas</div>
+    <div class="servicio">Reparaciones y mantenimiento</div>
 </section>
 
 <section id="agua">
-    <h2>Red de Agua por Termofusión</h2>
-    <div class="galeria">
-        <img src="https://images.unsplash.com/photo-1581093588401-22cab7a5fc9d" />
-        <img src="https://images.unsplash.com/photo-1521223619409-8085d2607891" />
-        <img src="https://images.unsplash.com/photo-1597009346974-dc589f0ca68e" />
-    </div>
+    <h2>Red de Agua</h2>
+    <div class="servicio">Termofusión</div>
+    <div class="servicio">Instalación de tanques</div>
+    <div class="servicio">Reparación de pérdidas</div>
+    <div class="servicio">Ampliaciones y mantenimiento</div>
 </section>
 
-<section id="sanitarios">
-    <h2>Sanitarios y Griferías</h2>
-    <div class="galeria">
-        <img src="https://images.unsplash.com/photo-1586201375754-13163e360d8a" />
-        <img src="https://images.unsplash.com/photo-1567016549638-1c6c5de29f9e" />
-        <img src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc" />
-    </div>
+<section id="calefaccion">
+    <h2>Calefacción</h2>
+    <div class="servicio">Loza radiante</div>
+    <div class="servicio">Radiadores</div>
+    <div class="servicio">Calderas</div>
+    <div class="servicio">Termotanques</div>
 </section>
 
-<section id="radiadores">
-    <h2>Radiadores / Loza Radiante</h2>
-    <div class="galeria">
-        <img src="https://images.unsplash.com/photo-1600585153757-4f240f6f0477" />
-        <img src="https://images.unsplash.com/photo-1604014238495-74a53c80fadc" />
-        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae" />
-    </div>
+<section id="reparaciones">
+    <h2>Reparaciones Generales</h2>
+    <div class="servicio">Reparaciones domiciliarias</div>
+    <div class="servicio">Mantenimiento general</div>
+    <div class="servicio">Ampliaciones del hogar</div>
 </section>
 
-<!-- CONTACTO -->
+<section id="electricidad">
+    <h2>Electricidad</h2>
+    <div class="servicio">Instalaciones eléctricas</div>
+    <div class="servicio">Colocación de luminarias</div>
+    <div class="servicio">Reparaciones</div>
+</section>
+
 <section id="contacto">
     <h2>Contacto</h2>
-
-    <form action="https://formsubmit.co/pallonevd@gmail.com" method="POST">
-        <input type="text" name="nombre" placeholder="Tu nombre" required>
-        <input type="email" name="email" placeholder="Tu correo" required>
-        <textarea name="mensaje" rows="5" placeholder="Detalle del problema o servicio solicitado" required></textarea>
-        <button type="submit">Enviar mensaje</button>
-
-        <!-- Protecciones -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="box">
-    </form>
+    <p>Envíe su consulta o pedido de presupuesto vía WhatsApp:</p>
+    <div class="contacto-box">
+        📞 <b>WhatsApp: +54 9 294 430 2685</b>
+    </div>
 </section>
 
 <footer>
-    © 2026 Damián Servicio Técnico — Soluciones Domiciliarias
+    © 2026 - Damian Servicio Técnico. Todos los derechos reservados.
 </footer>
 
 </body>
