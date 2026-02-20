@@ -3,163 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damian Servicio Técnico</title>
+    <title>Damián Mantenimiento del Hogar</title>
 
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: #f7f7f7;
-            color: #333;
+            padding: 0;
+            background: #f2f2f2;
         }
-
         header {
-            background: #1e88e5;
+            background: #003366;
             color: white;
-            padding: 25px 15px;
+            padding: 20px;
             text-align: center;
-            font-size: 1.8em;
-            letter-spacing: 1px;
         }
-
-        nav {
-            background: white;
-            padding: 10px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+        h2 {
+            color: #003366;
         }
-
-        nav a {
-            margin: 0 12px;
-            text-decoration: none;
-            color: #1e88e5;
-            font-weight: bold;
-            font-size: 0.95em;
-        }
-
-        section {
-            padding: 30px 20px;
+        .contenedor {
             max-width: 900px;
             margin: auto;
             background: white;
-            margin-top: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        h2 {
-            color: #1e88e5;
-        }
-
-        .servicio {
-            margin-bottom: 20px;
-            padding: 15px;
-            border-left: 4px solid #1e88e5;
-            background: #f2f9ff;
-            border-radius: 8px;
-        }
-
-        footer {
-            text-align: center;
             padding: 20px;
-            margin-top: 40px;
-            color: #666;
         }
-
-        .contacto-box {
-            background: #e3f2fd;
-            padding: 18px;
-            border-radius: 8px;
-            margin-top: 18px;
-            font-size: 1.1em;
+        .servicio {
+            background: #e8eef7;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: 5px solid #003366;
         }
-
-        .contacto-box b {
-            color: #1e88e5;
+        form {
+            margin-top: 30px;
+            padding: 15px;
+            background: #dde6f5;
+            border-radius: 5px;
         }
-
+        input, textarea, button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        button {
+            background: #003366;
+            color: white;
+            border: none;
+        }
     </style>
 </head>
 
 <body>
 
 <header>
-    Damian Servicio Técnico
+    <h1>Damián Mantenimiento del Hogar</h1>
+    <p>Servicio Técnico – Instalaciones – Reparaciones – Soluciones Domiciliarias</p>
 </header>
 
-<nav>
-    <a href="#gas">Gas</a>
-    <a href="#agua">Agua</a>
-    <a href="#calefaccion">Calefacción</a>
-    <a href="#reparaciones">Reparaciones</a>
-    <a href="#electricidad">Electricidad</a>
-    <a href="#contacto">Contacto</a>
-</nav>
+<div class="contenedor">
 
-<section id="presentacion">
-    <h2>Bienvenido</h2>
-    <p>
-        Brindo soluciones integrales para hogares y comercios, con experiencia, responsabilidad y compromiso.
-        Servicios de mantenimiento, instalaciones, reparaciones y ampliaciones.
-    </p>
+    <h2>Servicios que ofrezco</h2>
 
-    <div class="contacto-box">
-        📞 <b>WhatsApp: +54 297 4 160081 </b><br>
-        Atención en El Bolsón, Lago Puelo, El Hoyo, Epuyén y Bariloche.
-    </div>
-</section>
+    <div class="servicio">🔧 Instalación y reparación de calefactores</div>
+    <div class="servicio">🔥 Reparación integral de calderas</div>
+    <div class="servicio">🚿 Termotanques – eléctricos y a gas</div>
+    <div class="servicio">💧 Instalación de sanitarios y griferías</div>
+    <div class="servicio">🚰 Plomería y mantenimiento completo del hogar</div>
+    <div class="servicio">🏠 Construcción – ampliaciones – reparaciones</div>
 
-<section id="gas">
-    <h2>Servicios de Gas</h2>
-    <div class="servicio">Instalación de cocinas</div>
-    <div class="servicio">Colocación de calefactores</div>
-    <div class="servicio">Instalación de cañerías de gas</div>
-    <div class="servicio">Reparaciones y mantenimiento</div>
-</section>
+    <h2>Contacto directo</h2>
+    <p>📞 <strong>Tu teléfono aquí</strong></p>
+    <p>📍 El Bolsón – Lago Puelo – El Hoyo – Bariloche – Epuyén</p>
 
-<section id="agua">
-    <h2>Red de Agua</h2>
-    <div class="servicio">Termofusión</div>
-    <div class="servicio">Instalación de tanques</div>
-    <div class="servicio">Reparación de pérdidas</div>
-    <div class="servicio">Ampliaciones y mantenimiento</div>
-</section>
+    <h2>Enviar consulta o pedido de presupuesto</h2>
 
-<section id="calefaccion">
-    <h2>Calefacción</h2>
-    <div class="servicio">Loza radiante</div>
-    <div class="servicio">Radiadores</div>
-    <div class="servicio">Calderas</div>
-    <div class="servicio">Termotanques</div>
-</section>
+    <form action="https://formsubmit.co/pallonevd@gmail.com" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="mensaje" rows="5" placeholder="Describí el problema o el servicio que necesitás" required></textarea>
+        <button type="submit">Enviar mensaje</button>
 
-<section id="reparaciones">
-    <h2>Reparaciones Generales</h2>
-    <div class="servicio">Reparaciones domiciliarias</div>
-    <div class="servicio">Mantenimiento general</div>
-    <div class="servicio">Ampliaciones del hogar</div>
-</section>
+        <!-- Seguridad FormSubmit -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+    </form>
 
-<section id="electricidad">
-    <h2>Electricidad</h2>
-    <div class="servicio">Instalaciones eléctricas</div>
-    <div class="servicio">Colocación de luminarias</div>
-    <div class="servicio">Reparaciones</div>
-</section>
-
-<section id="contacto">
-    <h2>Contacto</h2>
-    <p>Envíe su consulta o pedido de presupuesto vía WhatsApp:</p>
-    <div class="contacto-box">
-        📞 <b>WhatsApp: +54 9 294 430 2685</b>
-    </div>
-</section>
-
-<footer>
-    © 2026 - Damian Servicio Técnico. Todos los derechos reservados.
-</footer>
+</div>
 
 </body>
 </html>
